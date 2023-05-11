@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:id="@+id/Welcome"
     >
 
     <ImageView
@@ -34,11 +35,11 @@
         app:layout_constraintVertical_bias="0.416" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/enroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtclick"
-        android:text="@string/pressme"
+        android:text="@string/enroll"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
