@@ -4,46 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/backgroundmain"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainbackimg"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/txtHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/welcome_to_uscheduler"
+        android:textSize="48sp"
+        android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtclick"
-        android:text="PressMe"
+        android:text="@string/pressme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686"
+        app:layout_constraintVertical_bias="0.684"
         tools:ignore="UsingOnClickInXml" />
 
     <EditText
         android:id="@+id/editTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Name"
+        android:autofillHints="422Ba"
+        android:ems="15"
+        android:hint="@string/seria_grupa"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textColorHint="#979797"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.627" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

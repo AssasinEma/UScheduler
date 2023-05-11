@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Scheduler</string>
     <string name="butts">Butts</string>
+    <string name="bine_ai_venit_la_uscheduler">Bine ai venit la Uscheduler!</string>
+    <string name="welcome_to_uscheduler">Welcome to Uscheduler!</string>
+    <string name="pressme">PressMe</string>
+    <string name="name">Name</string>
+    <string name="backgroundmain">BackgroundMain</string>
+    <string name="seria_grupa">Seria, Grupa</string>
 </resources>
