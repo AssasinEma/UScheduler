@@ -1,6 +1,7 @@
 package com.example.scheduler;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RestrictTo;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide(); //Hides action bar
+
 
         setContentView(R.layout.activity_main);
 
@@ -54,7 +57,10 @@ public class MainActivity extends AppCompatActivity {
                     .setAction("Next", new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Toast.makeText(MainActivity.this, "Next PAGE!", Toast.LENGTH_SHORT).show();
+                            String grupacurenta = group.getText().toString();
+                            Intent NextPage = new Intent(MainActivity.this, DrawerActivity.class);
+                            NextPage.putExtra("key",grupacurenta);
+                            startActivity(NextPage);
                         }
                     })
                     .show();
