@@ -31,4 +31,12 @@
     <string name="large_text">LMAOOO</string>
     <string name="write_smth">Write smth</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="longAboutText">This project started out as a small ideea with a much bigger dream, and while at this moment the application is small, we hope that one day it will end up as big as our initial dream.</string>
+    <string name="shortAboutText">The people who made this possible are:</string>
+    <string name="PplWhoWorked">Andrei Emanuel - Marius</string>
+    <string name="PplWhoTried1">Boricean Ana - Maria</string>
+    <string name="PplWhoTried2">Dragusin Marian-Alexandru</string>
+    <string name="PplWhoTried3">Badea Constantin-Catalin</string>
+    <string name="PplWhoTried4">Ghiold George-Catalin</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

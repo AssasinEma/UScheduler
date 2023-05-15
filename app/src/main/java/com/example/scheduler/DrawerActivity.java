@@ -51,11 +51,6 @@ public class DrawerActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        /*
-        TextView grouptext = findViewById(R.id.groupper);
-        grouptext.setText("Lmao");
-        */
-
     }
 
     @Override

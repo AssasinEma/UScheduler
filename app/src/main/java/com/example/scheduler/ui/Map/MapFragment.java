@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.scheduler.R;
 import com.example.scheduler.databinding.FragmentMapBinding;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MapFragment extends Fragment {
 
@@ -18,13 +20,12 @@ public class MapFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        MapViewModel mapViewModel = new ViewModelProvider(this).get(MapViewModel.class);
 
         binding = FragmentMapBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textMap;
-        mapViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        Snackbar.make(getActivity().findViewById(android.R.id.content), "There was an error with Google Maps", Snackbar.LENGTH_LONG).show();
+
         return root;
     }
 
