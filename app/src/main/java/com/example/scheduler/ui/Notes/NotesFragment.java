@@ -18,13 +18,12 @@ public class NotesFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotesViewModel notesViewModel =
-                new ViewModelProvider(this).get(NotesViewModel.class);
+        NotesViewModel notesViewModel = new ViewModelProvider(this).get(NotesViewModel.class);
 
         binding = FragmentNotesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textAbout;
+        final TextView textView = binding.textNotes;
         notesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

@@ -18,13 +18,12 @@ public class ToDoFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ToDoViewModel toDoViewModel =
-                new ViewModelProvider(this).get(ToDoViewModel.class);
+        ToDoViewModel toDoViewModel = new ViewModelProvider(this).get(ToDoViewModel.class);
 
         binding = FragmentTodoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textAbout;
+        final TextView textView = binding.textTodo;
         toDoViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

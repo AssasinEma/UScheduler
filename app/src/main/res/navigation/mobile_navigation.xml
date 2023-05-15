@@ -8,50 +8,30 @@
     <fragment
         android:id="@+id/nav_about"
         android:name="com.example.scheduler.ui.About.AboutFragment"
-        android:label="About"
-        tools:layout="@layout/fragment_about">
-        <action
-            android:id="@+id/action_nav_about_to_nav_map"
-            app:destination="@id/nav_map" />
-    </fragment>
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about"/>
 
     <fragment
         android:id="@+id/nav_map"
-        android:name="com.example.scheduler.ui.Profile.ProfileFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_map">
-        <action
-            android:id="@+id/action_nav_map_to_nav_notes"
-            app:destination="@id/nav_notes" />
-    </fragment>
+        android:name="com.example.scheduler.ui.Map.MapFragment"
+        android:label="@string/map"
+        tools:layout="@layout/fragment_map" />
 
     <fragment
         android:id="@+id/nav_notes"
-        android:name="com.example.scheduler.ui.ToDo.ToDoFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_notes">
-        <action
-            android:id="@+id/action_nav_notes_to_nav_profile"
-            app:destination="@id/nav_profile" />
-    </fragment>
+        android:name="com.example.scheduler.ui.Notes.NotesFragment"
+        android:label="@string/notes"
+        tools:layout="@layout/fragment_notes" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.example.scheduler.ui.ToDo.ToDoFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_profile">
-        <action
-            android:id="@+id/action_nav_profile_to_nav_todo"
-            app:destination="@id/nav_todo" />
-    </fragment>
+        android:name="com.example.scheduler.ui.Profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/nav_todo"
         android:name="com.example.scheduler.ui.ToDo.ToDoFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_todo">
-        <action
-            android:id="@+id/action_nav_todo_to_nav_about"
-            app:destination="@id/nav_about" />
-    </fragment>
+        android:label="@string/to_do"
+        tools:layout="@layout/fragment_todo"/>
 </navigation>
